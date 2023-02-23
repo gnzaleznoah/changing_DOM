@@ -20,20 +20,28 @@
 </head>
 <body>
     <h1>Dynamically create elements with JavaScript</h1>
-    <button> Make Boxes</button>
+    <button class="create-boxes"> Make Boxes</button>
     <div class="container"></div>
 
     <script>
         //create variable references 
-        const button = document.querySelector('button');
+        const mybutton = document.querySelector('.create-boxes');
         const container = document.querySelector('.container');
 
-        button.addEventListener('click', (e) => {
+
+        
+        mybutton.addEventListener('click', (e) => {
+        for(let i=0; i<10; i++){
+
+            
+
+            // make box and add to container
             const newBox = document.createElement('DIV');
             newBox.classList.add('box');
             container.append(newBox);
+        }
 
-        });
+            });
 
     </script>
 </body>
