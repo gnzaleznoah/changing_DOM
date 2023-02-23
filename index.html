@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working with DOM</title>
+    <title>CreateElements</title>
 <style>
-    #box{
-        width:100px;
-        height:100px;
+    #container{
+        min-height:100px;
         border:solid 5px;
-        margin:3rem;
-        text-align:center;
-        align-items:center;
+
     }
 </style>
 
 </head>
 <body>
-    <button id="makeDiv"> Make Div</button>
-    <div id="box">box</div>
+    <h1>Dynamically create elements with JavaScript</h1>
+    <button> Make Boxes</button>
+    <div id="container"></div>
 
     <script>
         const makeDiv=document.getElementById('makeDiv');
