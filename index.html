@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CreateElements</title>
 <style>
-    #container{
+    .container{
         min-height:100px;
         border:solid 5px;
-
+    }
+    .box{
+        border: 2px solid black;
+        height:50px;
+        width:50px;
     }
 </style>
 
@@ -17,18 +21,20 @@
 <body>
     <h1>Dynamically create elements with JavaScript</h1>
     <button> Make Boxes</button>
-    <div id="container"></div>
+    <div class="container"></div>
 
     <script>
-        const makeDiv=document.getElementById('makeDiv');
-        document.body.addEventListener('click', checkLoc);
+        //create variable references 
+        const button = document.querySelector('button');
+        const container = document.querySelector('.container');
 
-        function checkLoc(e) {
-            const box = document.querySelector ('.box');
-            box.style.transform = translateX (e.clientX + "px");
-            box.style.transform = translateY (e.clientY + "px");
-            console.log(e.clientX, e.clientY);
-        }
+        button.addEventListener('click', (e) => {
+            const newBox = document.createElement('DIV');
+            newBox.classList.add('box');
+            container.append(newBox);
+
+        });
+
     </script>
 </body>
 </html>
