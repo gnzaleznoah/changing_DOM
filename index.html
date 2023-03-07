@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreateElements</title>
-    <link rel="stylesheet" href="./main.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CreateElements</title>
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <h1>Changing the DOM</h1>
+        <div class="ex-1">
+            <h2>Dynamically create elements with JavaScript</h2>
+            <button class="create-boxes" data-holder=".container">Make Boxes</button>
+            <div class="container"></div>
+        </div>
 
+        <!-- For the second example, I was hoping for something more experimental or
+         using the image gallery starter example. How about something like this below ? -->
 
+        <button id="removeFirst">Remove First Square</button>
 
-</head>
-<body>
-    <h1>Changing the DOM</h1>
-    <div class="ex-1">
-        <h2>Dynamically create elements with JavaScript</h2>
-        <button class="create-boxes" data-holder=".container"> Make Boxes</button>
-        <div class="container"></div>
-    </div>
-    <div class="ex-2">
-     <h2>Click on Button to move Boxes</h2>
-        <div class="basic-box box1">1</div>
-        <div class="basic-box box2">2</div>
-        <button class="basic-box go-btn">GO 1!</button>
-        <button class="basic-box go-btn2">GO 2!</button>
-    </div>
-    <script src="./main.js" ></script>
-</body>
+        <button id="replaceLast">Replace last square</button>
+
+        <!-- TB: Noah old 2nd example-->
+        <div class="ex-2">
+            <h2>Click on Button to move Boxes</h2>
+            <div class="basic-box box1">1</div>
+            <div class="basic-box box2">2</div>
+            <button class="basic-box go-btn">GO 1!</button>
+            <button class="basic-box go-btn2">GO 2!</button>
+        </div>
+        <script src="./main.js"></script>
+    </body>
 </html>
